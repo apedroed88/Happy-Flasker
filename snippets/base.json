@@ -1,0 +1,40 @@
+{
+    "Flask hello world": {
+        "prefix": "hw",
+        "body": [
+            "from flask import Flask",
+            "app = Flask(__name__)",
+            "",
+            "@app.route('/')",
+            "def hello():",
+            "    return 'Hello World!'",
+            "",
+            "if __name__ == '__main__':",
+            "    app.run()"
+        ]
+    },
+    "Flask route": {
+        "prefix": "route",
+        "body": [
+            "@app.route('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "   pass$0"
+        ]
+    },
+    "Flask route with GET, POST": {
+        "prefix": "routegp",
+        "body": [
+            "@app.route('/${1:route_name}', methods=['GET', 'POST'])",
+            "def ${2:method_name}():",
+            "   pass$0"
+        ]
+    },
+    "Flask route POST only": {
+        "prefix": "routegp",
+        "body": [
+            "@app.route('/${1:route_name}', methods=['POST'])",
+            "def ${2:method_name}():",
+            "   pass$0"
+        ]
+    }
+}

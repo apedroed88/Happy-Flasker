@@ -1,0 +1,38 @@
+{
+    "name": "Happy-Flasker",
+    "displayName": "Happy Flasker",
+    "description": "Flask snippets",
+    "version": "0.0.1",
+    "publisher": "apedroed",
+    "icon": "images/flask.png",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "keywords": [
+        "snippets",
+        "flask",
+        "python"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/apedroed88/Happy-Flasker.git"
+    },
+    "contributes": {
+        "snippets": [{
+                "language": "python",
+                "path": "./snippets/base.json"
+            },
+            {
+                "language": "python",
+                "path": "./snippets/controls.json"
+            },
+            {
+                "language": "html",
+                "path": "./snippets/templates.json"
+            }
+        ]
+    }
+}
