@@ -15,7 +15,7 @@
         "prefix": "fblue",
         "body": "from flask import Blueprint, render_template\n\n${1:blue_print} = Blueprint('${1:blue_print}',__name__,template_folder='${2:templates}')\n\n\n@${1:blue_print}.route('${3:/}')\ndef ${4:index}():\n    return render_template('${5:index}.html')\n$0 $0"
     },
-    "Register Blueprint": {
+    "Register blueprint": {
         "prefix": "frb",
         "body": "${1:app}.register_blueprint(${2:blueprint_name})"
     },
