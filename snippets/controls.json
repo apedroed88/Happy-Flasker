@@ -11,6 +11,14 @@
         "prefix": "fapp",
         "body": "from flask import Flask, render_template\napp = Flask(__name__)\n\n\n@app.route('${1:/}')\ndef ${2:index}():\n    return render_template('${3:index}.html')\n\nif __name__ == '__main__':\n  app.run(host:'${4:127.0.0.1}', port=${5:8000}, debug=${6:True})\n$0 $0"
     },
+    "Flask blueprint": {
+        "prefix": "fblue",
+        "body": "from flask import Blueprint, render_template\n\n${1:blue_print} = Blueprint('${1:blue_print}',__name__,template_folder='${2:templates}')\n\n\n@${1:blue_print}.route('${3:/}')\ndef ${4:index}():\n    return render_template('${5:index}.html')\n$0 $0"
+    },
+    "Register Blueprint": {
+        "prefix": "frb",
+        "body": "${1:app}.register_blueprint(${2:blueprint_name})"
+    },
     "Flask route": {
         "prefix": "froute",
         "body": "@app.route('${1:path}')\ndef ${2:func_name}(${3:foo}):\n    return render_template('${4:expression}')$0"
