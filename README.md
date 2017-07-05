@@ -23,6 +23,8 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 | """          | ML docstring    |
 | ""           | SL docstring    |
 | fapp         | Flask App       |
+| fblue        | Flask blueprint |
+| frb          | Register blueprint |
 | froute       | Flask route     |
 | furl         | URL generator   |
 | fmeth        | URL methods     |
