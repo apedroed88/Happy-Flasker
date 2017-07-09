@@ -7,7 +7,7 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 ## Release Notes
 
 ## [0.0.3]
-- Added create session an remove session 
+- Added create session and remove session 
 - Added flash snippet and flash template
 
 
