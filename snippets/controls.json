@@ -70,5 +70,9 @@
     "Flask logging": {
         "prefix": "flog",
         "body": "app.logger.${1:debug}(\"${2:A message}\")\n$0"
+    },
+    "Flask flash message": {
+        "prefix": "ffm",
+        "body": "flash('${1:message}', '${2:{category}')"
     }
 }
