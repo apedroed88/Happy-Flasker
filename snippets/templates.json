@@ -67,8 +67,8 @@
         "prefix": "fautoescape",
         "body": "{% autoescape ${1:true} %}\n\t\t${2:blockofcode}\n{% endautoescape %}\n$0"
     },
-    "Flask url": {
-        "prefix": "furl",
-        "body": "{{ url_for(\"${1:template}\") }}$0"
+    "Flask flash template": {
+        "prefix": "fft",
+        "body": "{% with messages = get_flashed_messages(with_categories=true) %}\n\t{% if messages %}\n\t\t<ul class=flashes>\n\t\t{% for category, message in messages %}\n\t\t\t<li class=\"{{ category }}\">{{ message }}</li>\n\t\t{% endfor %}\n\t\t</ul>\n\t{% endif %}\n{% endwith %}"
     }
 }

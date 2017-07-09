@@ -19,14 +19,6 @@
         "prefix": "frb",
         "body": "${1:app}.register_blueprint(${2:blueprint_name})"
     },
-    "Add session": {
-        "prefix": "fas",
-        "body": "session['${1:seesion_key}'] = ${2:session_value}"
-    },
-    "Remove session": {
-        "prefix": "frs",
-        "body": "session.pop('${1:session_key}', None)"
-    },
     "Flask route": {
         "prefix": "froute",
         "body": "@app.route('${1:path}')\ndef ${2:func_name}(${3:foo}):\n    return render_template('${4:expression}')$0"
@@ -70,6 +62,14 @@
     "Flask logging": {
         "prefix": "flog",
         "body": "app.logger.${1:debug}(\"${2:A message}\")\n$0"
+    },
+    "Flask session": {
+        "prefix": "fas",
+        "body": "session['${1:seesion_key}'] = ${2:session_value}"
+    },
+    "Flask Remove session": {
+        "prefix": "frs",
+        "body": "session.pop('${1:session_key}', None)"
     },
     "Flask flash message": {
         "prefix": "ffm",
