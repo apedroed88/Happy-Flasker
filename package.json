@@ -2,7 +2,7 @@
     "name": "Happy-Flasker",
     "displayName": "Happy Flasker",
     "description": "Flask snippets",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "apedroed",
     "icon": "images/flask.png",
     "engines": {

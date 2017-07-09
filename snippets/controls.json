@@ -62,5 +62,17 @@
     "Flask logging": {
         "prefix": "flog",
         "body": "app.logger.${1:debug}(\"${2:A message}\")\n$0"
+    },
+    "Flask session": {
+        "prefix": "fas",
+        "body": "session['${1:seesion_key}'] = ${2:session_value}"
+    },
+    "Flask Remove session": {
+        "prefix": "frs",
+        "body": "session.pop('${1:session_key}', None)"
+    },
+    "Flask flash message": {
+        "prefix": "ffm",
+        "body": "flash('${1:message}', '${2:{category}')"
     }
 }
