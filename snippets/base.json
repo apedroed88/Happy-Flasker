@@ -36,5 +36,29 @@
             "def ${2:method_name}():",
             "   pass$0"
         ]
+    },
+    "Flask app factory": {
+        "prefix": "ffactory",
+        "body": [
+            "def create_app(**config_overrides):",
+                "app = Flask(__name__)",
+                
+                "# Load config",
+                "app.config.from_pyfile('development.py')",
+                
+                "# overrides configurations",
+                "app.config.update(config_overrides)",
+                
+                "# setup db",
+                "db.init_app(app)",
+                
+                "# import blueprints",
+                "from '$(1:blue_print_module)' import '$(2:blue_print)'",
+                
+                "# register blueprints",
+                "app.register_blueprint('$(2:blue_print)')",
+                
+            "return app"
+        ]
     }
 }
