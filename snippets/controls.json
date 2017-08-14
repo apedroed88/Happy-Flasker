@@ -75,4 +75,5 @@
         "prefix": "ffm",
         "body": "flash('${1:message}', '${2:{category}')"
     }
+
 }

@@ -6,6 +6,8 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 
 ## Release Notes
 
+## [0.0.4]
+- Added Flask aplication factory(ffactory)
 ## [0.0.3]
 - Added create remove session 
 - Added flash snippet and flash template
@@ -21,6 +23,7 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 | route        | Flask route                |
 | routegp      | Flask route with GET, POST |
 | routegp      | Flask route POST only      |
+| ffactory     | Flask aplication factory   |
 
 ### Controls snippets
 
