@@ -2,3 +2,4 @@
 vsc-*
 .DS_Store/
 *.vsix
+*.py
