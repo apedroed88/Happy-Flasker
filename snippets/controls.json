@@ -74,5 +74,10 @@
     "Flask flash message": {
         "prefix": "ffm",
         "body": "flash('${1:message}', '${2:{category}')"
+    },
+    "Flask flash message": {
+        "prefix": "ffactory",
+        "body": "def create_app(**config_overrides):\n\tapp = Flask(__name__)\n\n \t# Load config\tapp.config.from_pyfile('development.py')\n\n\t# overrides configurations\n\tapp.config.update(config_overrides)\n\n\t# setup db\n\tdb.init_app(app)\n\n\t# import blueprints\n\tfrom '$(1:blue_print_module)'' import '$(2:blue_print)'\n\n\t# register blueprints\tapp.register_blueprint('$(2:blue_print)')\n\nreturn app"
     }
+
 }
