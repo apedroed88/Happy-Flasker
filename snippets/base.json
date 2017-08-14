@@ -40,6 +40,9 @@
     "Flask app factory": {
         "prefix": "ffactory",
         "body": [
+            "from flask import Flask",
+            "",
+            "",
             "def create_app(**config_overrides):",
             "   app = Flask(__name__)",
                 
@@ -50,13 +53,13 @@
             "   app.config.update(config_overrides)",
                 
             "   # setup db",
-            "   db.init_app(app)",
+            "   #db.init_app(app)",
                 
             "   # import blueprints",
-            "   from '$(1:blue_print_module)' import '$(2:blue_print)'",
+            "   from '${1:blue_print_module}' import ${2:blue_print}",
                 
             "   # register blueprints",
-            "   app.register_blueprint('$(2:blue_print)')",
+            "   app.register_blueprint(${2:blue_print})",
                 
             "return app"
         ]
