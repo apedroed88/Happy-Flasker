@@ -18,7 +18,7 @@
         "body": [
             "@app.route('/${1:route_name}')",
             "def ${2:method_name}():",
-            "   pass$0"
+            "    pass$0"
         ]
     },
     "Flask route with GET, POST": {
@@ -26,7 +26,7 @@
         "body": [
             "@app.route('/${1:route_name}', methods=['GET', 'POST'])",
             "def ${2:method_name}():",
-            "   pass$0"
+            "    pass$0"
         ]
     },
     "Flask route POST only": {
@@ -34,33 +34,32 @@
         "body": [
             "@app.route('/${1:route_name}', methods=['POST'])",
             "def ${2:method_name}():",
-            "   pass$0"
+            "    pass$0"
         ]
     },
     "Flask app factory": {
         "prefix": "ffactory",
         "body": [
             "from flask import Flask",
-            "\n",            
-            "def create_app(**config_overrides):",
-            "   app = Flask(__name__)",
-            "\n",    
-            "   # Load config",
-            "   app.config.from_pyfile('development.py')",
-            "\n",
-            "   # overrides configurations",
-            "   app.config.update(config_overrides)",
-            "\n",
-            "   # setup db",
-            "   #db.init_app(app)",
-            "\n",   
-            "   # import blueprints",
-            "   from ${1:blue_print_module} import ${2:blue_print}",
+            "",            
+            "def create_app(config_filename, **overides):",
+            "    app = Flask(__name__)",
+            "    app.config.from_pyfile(config_filename)",
             "",
-            "   # register blueprints",
-            "   app.register_blueprint(${2:blue_print})",
+            "    # overrides configurations",
+            "    app.config.update(overrides)",
+            "",
+            "    # setup db",
+            "    #from ${1:yourapplication.model} import ${2:db}",
+            "    #${2:db}.init_app(app)",
+            "",   
+            "    # import blueprints",
+            "    from ${3:blue_print_module} import ${4:blue_print}",
+            "",
+            "    # register blueprints",
+            "    app.register_blueprint(${4:blue_print})",
                 
-            "return app"
+            "    return app"
         ]
     }
 }
