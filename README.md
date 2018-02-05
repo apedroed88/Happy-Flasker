@@ -6,6 +6,13 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 
 ## Release Notes
 
+## [0.0.5]
+- Correcting typographical errors in an abbreviation and a description.
+- fix indentation, update ffactory
+- fixed typo
+  ### Thanks to:
+   - [willm78](https://github.com/willm78)
+   - [nootrope](https://github.com/nootrope)
 ## [0.0.4]
 - Added Flask application factory(ffactory)
 ## [0.0.3]
