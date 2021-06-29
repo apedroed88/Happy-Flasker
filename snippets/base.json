@@ -37,6 +37,47 @@
             "    pass$0"
         ]
     },
+    "Flask 2.0 route GET only": {
+        "prefix": "get",
+        "body": [
+            "@app.route('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    "Flask 2.0 route POST only": {
+        "prefix": "post",
+        "body": [
+            "@app.post('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    "Flask route with PUT": {
+        "prefix": "put",
+        "body": [
+            "@app.put('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    "Flask 2.0 route PATCH only": {
+        "prefix": "patch",
+        "body": [
+            "@app.patch('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
+    
+    "Flask 2.0 route DELETE only": {
+        "prefix": "patch",
+        "body": [
+            "@app.delete('/${1:route_name}')",
+            "def ${2:method_name}():",
+            "    pass$0"
+        ]
+    },
     "Flask app factory": {
         "prefix": "ffactory",
         "body": [
