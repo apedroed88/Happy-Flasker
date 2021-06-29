@@ -1,9 +1,9 @@
 {
-    "name": "Happy-Flasker",
-    "displayName": "Happy Flasker",
-    "description": "Flask snippets",
-    "version": "0.0.5",
-    "publisher": "apedroed",
+    "name": "happy_flasker_2",
+    "displayName": "Happy Flasker 2",
+    "description": "A Fork of Happy Flasker by [apedroed](https://github.com/apedroed) to add some extra snippets",
+    "version": "0.0.6",
+    "publisher": "mage1k99",
     "icon": "images/flask.png",
     "engines": {
         "vscode": "^1.12.0"
@@ -18,7 +18,7 @@
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/apedroed88/Happy-Flasker.git"
+        "url": "https://github.com/mage1k99/Happy-Flasker-2.git"
     },
     "contributes": {
         "snippets": [{
