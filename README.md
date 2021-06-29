@@ -6,6 +6,12 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 
 ## Release Notes
 
+## [0.0.6]
+- Adding additonal snippets for flask 2.0 style of writing routes.
+### Thanks to:
+  - [mage1k99](https://github.com/mage1k99)
+
+
 ## [0.0.5]
 - Correcting typographical errors in an abbreviation and a description.
 - fix indentation, update ffactory
@@ -24,13 +30,18 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 
 ### Base snippets
 
-| Abbreviation | Description                |
-|--------------|----------------------------|
-| hw           | Flask hello world          |
-| route        | Flask route                |
-| routegp      | Flask route with GET, POST |
-| routep       | Flask route POST only      |
-| ffactory     | Flask application factory  |
+| Abbreviation | Description                 |
+|--------------|-----------------------------|
+| hw           | Flask hello world           |
+| route        | Flask route                 |
+| routegp      | Flask route with GET, POST  |
+| routep       | Flask route POST only       |
+| get          | Flask 2.0 route GET only    |
+| post         | Flask 2.0 route POST only   |
+| put          | Flask 2.0 route PUT only    |
+| patch        | Flask 2.0 route PATCH only  |
+| delete       | Flask 2.0 route DELETE only |
+| ffactory     | Flask application factory   |
 
 ### Controls snippets
 
