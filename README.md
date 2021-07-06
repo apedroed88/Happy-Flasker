@@ -2,7 +2,7 @@
 
 Happy Flasker is a fork of flask-snippets, made to make "Flaskers" happy and productive.
 
-If you have a good idea to make a "Flasker" more happy, [submit a pull request here](https://github.com/apedroed88/Happy-Flasker.git)
+If you have a good idea to make a "Flasker" more happy, [submit a pull request here](https://github.com/mage1k99/Happy-Flasker-2.git)
 
 ## Release Notes
 
