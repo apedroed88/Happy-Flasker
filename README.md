@@ -6,6 +6,10 @@ If you have a good idea to make a "Flasker" more happy, [submit a pull request h
 
 ## Release Notes
 
+## [0.0.7]
+
+- Update meta information about the extension.
+
 ## [0.0.6]
 - Adding additonal snippets for flask 2.0 style of writing routes.
 ### Thanks to:

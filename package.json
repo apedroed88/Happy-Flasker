@@ -2,7 +2,7 @@
     "name": "happy-flasker-2",
     "displayName": "Happy Flasker 2",
     "description": "A Fork of Happy Flasker by apedroed with additional snippets",
-    "version": "0.0.6",
+    "version": "0.0.7",
     "publisher": "mage1k99",
     "icon": "images/flask.png",
     "engines": {
